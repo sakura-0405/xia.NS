@@ -1,48 +1,39 @@
-import Image from "next/image"
+import styles from '@/styles/about.module.css';
+import Link from "next/link";
 
 export default function Page() {
   return (
-    <main className="main">
-      <header className="header">
-        蝦
-      </header>
+    <main>
+      <header><span className={styles.header}>關於我</span><span><Link href="/">首頁</Link></span></header>
 
-    <div className="Profile">
-      <table className="profile_TB">
+      <table className={`${styles.Profile_Table1} ${styles.Profile_Table_Common}`}>
         <tbody>
-          <tr>
-            <td>
-              <img src="/MyPic.jpg" className="MyPic1"/>
-            </td>
-            <td className="td1">
-              <h1>蝦?</h1>
-              <span className="Name1"><a href="https://www.instagram.com/sakura._.6896_">赤櫻櫻</a></span>
+          <tr rowSpan="2" className={styles.Profile_Tr1}>
+            <td><img src="/MyPic.jpg" className={styles.MyPic1}/></td>
+            <td className={styles.NameCell}>
+              <span className={styles.Name}>赤櫻櫻</span>
+              <span className={styles.id}>sakura_0405</span>
             </td>
           </tr>
         </tbody>
       </table>
-    </div>
-
-    <div className="Links">
-      <table className="link_TB">
-		    <tbody>
-          <tr>
-			      <td className="discord_link">
-				      <strong className="DC1">Discord</strong> : <a href="https://discord.gg/WwGGnV5D3s" target="_blank" rel="noopener noreferrer"><strong className="P1">豬玀G公園 (server)</strong></a>
-			        </td>
-			      </tr>
-			      <tr>
-			        <td className="twitch_link">
-			          <strong className="TC1">Twitch</strong> : <a href="https://www.twitch.tv/sakura_0405" target="_blank" rel="noopener noreferrer"><strong className="P2">sakura_0405</strong></a>
-			        </td>
-			      </tr>
-          </tbody>
-	    </table>
-    </div>
-
-
-
-
+      
+      <table className={`${styles.Profile_Table2} ${styles.Profile_Table_Common}`}>
+        <tbody>
+          <tr className={styles.Profile_Tr2}>
+            <th>星座</th>
+            <td>牧羊座</td>
+          </tr>
+          <tr className={styles.Profile_Tr2}>
+            <th>個性</th>
+            <td>瓦斯桶(炸一下就沒了)</td>
+          </tr>
+          <tr className={styles.Profile_Tr2}>
+            <th>興趣</th>
+            <td>吃好吃的，玩好玩的，睡覺，騎車</td>
+          </tr>
+        </tbody>
+      </table>
     </main>
   )
 }

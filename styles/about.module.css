@@ -1,0 +1,87 @@
+/*大標題CSS*/
+.header
+    {
+        display: flex;
+        border-radius: 8px 8px 0 0;
+        background-color: #1f1f1f;
+        justify-content: center;
+        align-items: center;
+        color: #FFAACC;
+        text-align: center;
+        font-size: 5vw;
+        padding: 0.1rem;
+        
+    }
+
+/*-------------------------------------------------------*/
+/*Profile 共用 CSS*/
+.Profile_Table_Common
+    {
+        margin-left: auto; 
+        margin-right: auto;
+        margin-top: 0.5vw ;
+        border-collapse: collapse;
+        border: 1px solid white;
+    }
+
+/*-------------------------------------------------------*/
+/*Profile1 CSS*/
+.Profile_Tr1
+    {
+        display: flex;
+        align-items: stretch; 
+    }
+
+.MyPic1
+    {
+        display: block;
+        margin: 0 auto;
+        width: clamp(200px, 30vw, 500px);
+        aspect-ratio: 1 / 1.25;
+    }
+
+.NameCell    
+    {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        border: 1px solid white;
+        color: white; 
+    }
+
+.Name
+    {
+        font-size: clamp(30px,20vw,50px);
+        padding: 8px;
+    }
+
+.id
+    {
+        text-align: center;
+        font-size: clamp(16px,15vw,35px);
+        padding: 4px 8px;
+    }
+
+/*-------------------------------------------------------*/
+/*Profile2 CSS*/
+.Profile_Table2
+    {
+        color: white;
+    }
+
+.Profile_Tr2 th
+    {
+        font-size: clamp(16px,15vw,35px);
+        border-right: 1px solid white;
+    }
+
+.Profile_Tr2 td
+    {
+        font-size: clamp(12px,13vw,30px);
+        border-right: 1px solid white;
+    }
+
+
+/*-------------------------------------------------------*/

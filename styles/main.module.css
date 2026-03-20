@@ -1,0 +1,24 @@
+.MP1
+    {
+        text-align: center;
+        color: white;
+        font-size: 5vw;
+    }
+
+.MP2
+    {
+        text-align: center;
+        color: white;
+        font-size: 4vw;
+    }
+
+.P_TB
+    {
+        margin-left: auto; 
+        margin-right: auto;
+    }
+
+.P_td1, .P_td2
+    {
+        font-size: 3vw;
+    }
