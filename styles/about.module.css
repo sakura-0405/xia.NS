@@ -13,6 +13,12 @@
         
     }
 
+.Go_Main
+    {
+        font-size: 2vw;
+        color: white;
+    }
+
 /*-------------------------------------------------------*/
 /*Profile 共用 CSS*/
 .Profile_Table_Common
@@ -47,14 +53,14 @@
         flex-direction: column;
         justify-content: center;
         padding: 0;
-        border: 1px solid white;
-        color: white; 
+        border-left: 1px solid white;
     }
 
 .Name
     {
         font-size: clamp(30px,20vw,50px);
         padding: 8px;
+        color: pink; 
     }
 
 .id
@@ -62,6 +68,7 @@
         text-align: center;
         font-size: clamp(16px,15vw,35px);
         padding: 4px 8px;
+        color: #FFAACC;
     }
 
 /*-------------------------------------------------------*/
@@ -74,14 +81,39 @@
 .Profile_Tr2 th
     {
         font-size: clamp(16px,15vw,35px);
-        border-right: 1px solid white;
+        border-bottom: 1px solid white;
     }
 
 .Profile_Tr2 td
     {
         font-size: clamp(12px,13vw,30px);
         border-right: 1px solid white;
+        border-bottom: 1px solid white;
     }
 
 
 /*-------------------------------------------------------*/
+/*Profile3 CSS*/
+.Profile_Table3
+    {
+        color: white;
+    }
+
+.Profile_Table3_Header
+    {
+        text-align: center;
+    }
+
+.Profile_Tr3 th
+    {
+        font-size: clamp(16px,15vw,35px);
+        border-bottom: 1px solid white;
+    }
+
+.Profile_Tr3 td
+    {
+        font-size: clamp(12px,13vw,30px);
+        border-right: 1px solid white;
+        border-bottom: 1px solid white;
+    }
+
