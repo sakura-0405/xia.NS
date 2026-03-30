@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Page() {
   return (
     <main>
-      <header><span className={styles.header}>關於我</span><span className={styles.Go_Main}><Link href="/">首頁</Link></span></header>
+      <header><span className={styles.header}>關於我</span><span><Link href="/" className={styles.Go_Main}>首頁</Link></span></header>
 
       <table className={`${styles.Profile_Table1} ${styles.Profile_Table_Common}`}>
         <tbody>

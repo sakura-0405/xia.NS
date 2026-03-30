@@ -22,3 +22,14 @@
     {
         font-size: 3vw;
     }
+
+.B
+    {
+        color: white;
+        text-decoration: none;
+    }
+
+.B:hover
+    {
+        color: blue;
+    }

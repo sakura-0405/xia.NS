@@ -81,12 +81,12 @@
 
 /*-------------------------------------------------------*/
 
-.Go_Main1
+.Go_Main
     {
         font-size: 2vw;
     }
 
-.Go_Main2:hover
+.Go_Main:hover
     {
         color: blue;
     }

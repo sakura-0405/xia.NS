@@ -7,8 +7,8 @@ export default function Page() {
     <header>
       <span className={styles.header}>聯絡我</span>
 
-      <span className={styles.Go_Main1}>
-      <Link className={`${styles.Go_Main2} ${styles.Links}`} href="/">首頁</Link>
+      <span>
+      <Link className={`${styles.Go_Main} ${styles.Links}`} href="/">首頁</Link>
 
       </span>
     </header>

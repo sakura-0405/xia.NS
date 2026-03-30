@@ -13,13 +13,16 @@
         
     }
 
+/*-------------------------------------------------------*/
+/*前往首頁按鈕CSS*/
 .Go_Main
     {
         font-size: 2vw;
         color: white;
+        text-decoration: none;
     }
 
-.Go_Main2:hover
+.Go_Main:hover
     {
         color: blue;
     }
@@ -28,6 +31,8 @@
 /*Profile 共用 CSS*/
 .Profile_Table_Common
     {
+        color: white;
+        width: 55vw;
         margin-left: auto; 
         margin-right: auto;
         margin-top: 0.5vw ;
@@ -47,7 +52,7 @@
     {
         display: block;
         margin: 0 auto;
-        width: clamp(200px, 30vw, 500px);
+        width: clamp(200px, 25vw, 350px);
         aspect-ratio: 1 / 1.25;
     }
 
@@ -63,26 +68,19 @@
 
 .Name
     {
-        font-size: clamp(30px,20vw,40px);
-        padding: 8px;
+        font-size: clamp(30px,25vw,60px);
         color: pink; 
     }
 
 .id
     {
-        text-align: center;
-        font-size: clamp(16px,10vw,30px);
-        padding: 4px 8px;
+
+        font-size: clamp(30px,20vw,50px);
         color: #FFAACC;
     }
 
 /*-------------------------------------------------------*/
 /*Profile2 CSS*/
-.Profile_Table2
-    {
-        color: white;
-    }
-
 .Profile_Tr2 th
     {
         font-size: clamp(16px,15vw,35px);
@@ -99,11 +97,6 @@
 
 /*-------------------------------------------------------*/
 /*Profile3 CSS*/
-.Profile_Table3
-    {
-        color: white;
-    }
-
 .Profile_Table3_Header
     {
         text-align: center;
