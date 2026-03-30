@@ -1,0 +1,92 @@
+/*大標題樣式*/
+.header
+    {
+        display: flex;
+        border-radius: 8px 8px 0 0;
+        background-color: #1f1f1f;
+        justify-content: center;
+        align-items: center;
+        color: #FFAACC;
+        text-align: center;
+        font-size: 5vw;
+        padding: 0.1rem;
+        
+    }
+
+/*-------------------------------------------------------*/
+/*網址共用樣式*/
+.Links
+    {
+        color: white;
+        text-decoration: none;
+    }
+
+/*-------------------------------------------------------*/
+/*網址外觀樣式*/
+
+.link_TB
+    {
+        border: 1px solid white;
+        width: 70vw;
+        margin-left: auto; 
+        margin-right: auto;
+        border-collapse: collapse;
+    }
+
+.link_TD
+    {
+        font-size: clamp(30px,15vw,40px);
+        text-align: start;
+        border-bottom: 1px solid white;
+    }
+
+/*-------------------------------------------------------*/
+/*Discord網址樣式*/
+
+.discord
+    {
+        color: #5865F2;
+    }
+
+.discord_link:hover
+    {
+        color: #A000ff;
+    }
+
+/*-------------------------------------------------------*/
+/*Twitch網址樣式*/
+
+.twitch
+    {
+        color: #9146FF;
+    }
+
+.twitch_link:hover
+    {
+        color: #00A0ff;
+    }
+
+/*-------------------------------------------------------*/
+/*instagram網址樣式*/
+
+.instagram
+    {
+        color: #FF99BB;
+    }
+
+.instagram_link:hover
+    {
+        color: #FF00FF;
+    }
+
+/*-------------------------------------------------------*/
+
+.Go_Main1
+    {
+        font-size: 2vw;
+    }
+
+.Go_Main2:hover
+    {
+        color: blue;
+    }

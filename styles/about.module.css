@@ -19,6 +19,11 @@
         color: white;
     }
 
+.Go_Main2:hover
+    {
+        color: blue;
+    }
+
 /*-------------------------------------------------------*/
 /*Profile 共用 CSS*/
 .Profile_Table_Common
@@ -58,7 +63,7 @@
 
 .Name
     {
-        font-size: clamp(30px,20vw,50px);
+        font-size: clamp(30px,20vw,40px);
         padding: 8px;
         color: pink; 
     }
@@ -66,7 +71,7 @@
 .id
     {
         text-align: center;
-        font-size: clamp(16px,15vw,35px);
+        font-size: clamp(16px,10vw,30px);
         padding: 4px 8px;
         color: #FFAACC;
     }
