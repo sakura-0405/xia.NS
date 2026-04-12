@@ -20,6 +20,11 @@ export default function Page() {
             <Link href = "/contact" className={`${styles.B2} ${styles.B}`}>聯絡我</Link>
           </td>
         </tr>
+        <tr>
+          <td className={styles.P_td3}>
+            <Link href = "/set" className={`${styles.B3} ${styles.B}`}>設備配置</Link>
+          </td>
+        </tr>
         </tbody>
       </table>
     </div>
