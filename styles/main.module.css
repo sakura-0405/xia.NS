@@ -1,43 +1,64 @@
-.MP1
-    {
-        text-align: center;
-        color: white;
-        font-size: 5vw;
-    }
+.main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
 
-.MP2
-    {
-        text-align: center;
-        color: white;
-        font-size: 4vw;
-    }
+.pageWrapper {
+  width: 100%;
+  max-width: 600px;
+  /* 移除 dashed 邊框，改用更有質感的呼吸感間距 */
+  text-align: center;
+}
 
-.P_TB
-    {
-        border: 1px dashed white;
-        margin-left: auto; 
-        margin-right: auto;
-    }
+.header {
+  margin-bottom: 3rem;
+}
 
-.P_td1, .P_td2, .P_td3
-    {
-        font-size: 3vw;
-    }
+.MP1 {
+  color: white;
+  font-size: clamp(2.5rem, 8vw, 4rem); /* 限制最小與最大字型 */
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5rem; /* 增加標題字間距 */
+}
 
-.B
-    {
-        display: block;
-        width: 100%;
-        color: white;
-        text-decoration: none;
-    }
+.MP2 {
+  color: rgba(255, 255, 255, 0.6); /* 副標題稍微變淡，增加層次 */
+  font-size: clamp(1rem, 4vw, 1.5rem);
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
 
-.B:hover
-    {
-        color: blue;
-    }
+.navStack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* 按鈕之間的間距 */
+  border: 1px dashed rgba(255, 255, 255, 0.3); /* 弱化虛線框 */
+  padding: 2rem;
+  border-radius: 8px;
+}
 
-.B1, .B2
-    {
-        text-align: center;
-    }
+.B {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  padding: 1rem;
+  border: 1px solid transparent;
+  transition: all 0.3s ease; /* 讓變化變平滑 */
+  position: relative;
+}
+
+/* 懸停效果：加上一點發光或底線 */
+.B:hover {
+  color: #0070f3; /* 亮藍色 */
+  background: rgba(255, 255, 255, 0.05); /* 輕微的背景亮起 */
+  letter-spacing: 0.3rem; /* 懸浮時字體撐開的動畫感 */
+}
+
+/* 如果你想針對特定按鈕給不同顏色 */
+.B1:hover { border-bottom: 1px solid #0070f3; }
+.B2:hover { border-bottom: 1px solid #0070f3; }
+.B3:hover { border-bottom: 1px solid #0070f3; }

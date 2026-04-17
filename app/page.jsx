@@ -3,31 +3,25 @@ import Link from "next/link";
 
 export default function Page() {
   return (
-  <main className={styles.main}>
-    <div className={styles.pageWrapper}>
-        <h1 className={styles.MP1}>歡迎</h1>
-        <h2 className={styles.MP2}>welcome</h2>
+    <main className={styles.main}>
+      <div className={styles.pageWrapper}>
+        <header className={styles.header}>
+          <h1 className={styles.MP1}>歡迎</h1>
+          <h2 className={styles.MP2}>WELCOME</h2>
+        </header>
 
-      <table className={styles.P_TB}>
-        <tbody>
-        <tr>
-          <td className={styles.P_td1}>
-            <Link href = "/about" className={`${styles.B1} ${styles.B}`}>關於我</Link>
-          </td>
-        </tr>
-        <tr>
-          <td className={styles.P_td2}>
-            <Link href = "/contact" className={`${styles.B2} ${styles.B}`}>聯絡我</Link>
-          </td>
-        </tr>
-        <tr>
-          <td className={styles.P_td3}>
-            <Link href = "/set" className={`${styles.B3} ${styles.B}`}>設備配置</Link>
-          </td>
-        </tr>
-        </tbody>
-      </table>
-    </div>
-  </main>
+        <nav className={styles.navStack}>
+          <Link href="/about" className={`${styles.B} ${styles.B1}`}>
+            關於我
+          </Link>
+          <Link href="/contact" className={`${styles.B} ${styles.B2}`}>
+            聯絡我
+          </Link>
+          <Link href="/set" className={`${styles.B} ${styles.B3}`}>
+            設備配置
+          </Link>
+        </nav>
+      </div>
+    </main>
   )
 }

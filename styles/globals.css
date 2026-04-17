@@ -1,15 +1,17 @@
-body 
-{
+body {
   margin: 0;
   padding: 0;
   background-color: black;
+  color: white;
+  /* 讓字體在黑底上更平滑 */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-body
-{
+body {
   font-family: 
-    "DFKai-SB",
-    "標楷體",
-    "KaiTi",
+    "DFKai-SB", 
+    "標楷體", 
+    "KaiTi", 
     serif;
 }

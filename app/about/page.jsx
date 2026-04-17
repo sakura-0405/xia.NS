@@ -3,52 +3,52 @@ import Link from "next/link";
 
 export default function Page() {
   return (
-    <main>
-      <div className={styles.container}>
-        <div className={styles.header}>關於我</div>
+    <main className={styles.container}>
+      <header className={styles.header}>關於我</header>
 
-        <div className={styles.left}>
-          <span><Link href="/" className={styles.Go}>首頁</Link></span>
-          <span><Link href="/contact" className={styles.Go}>聯絡我</Link></span>
-          <span><Link href="/set" className={styles.Go}>設備配置</Link></span>
+      <nav className={styles.left}>
+        <Link href="/" className={styles.Go}>首頁</Link>
+        <Link href="/contact" className={styles.Go}>聯絡我</Link>
+        <Link href="/set" className={styles.Go}>設備配置</Link>
+      </nav>
+
+      <section className={styles.mainContent}>
+        {/* 個人主卡片 */}
+        <div className={styles.profileCard}>
+          <div className={styles.picWrapper}>
+            <img src="/MyPic.jpg" alt="Profile" className={styles.MyPic1}/>
+          </div>
+          <div className={styles.nameInfo}>
+            <h1 className={styles.Name}>赤櫻櫻</h1>
+            <span className={styles.id}>sakura_0405</span>
+          </div>
         </div>
 
-        <div className={styles.main}>
-          <table className={`${styles.Profile_Table1} ${styles.Profile_Table_Common}`}>
-            <tbody>
-              <tr rowSpan="2" className={styles.Profile_Tr1}>
-                <td><img src="/MyPic.jpg" className={styles.MyPic1}/></td>
-                <td className={styles.NameCell}>
-                  <span className={styles.Name}>赤櫻櫻</span>
-                  <span className={styles.id}>sakura_0405</span>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-          <table className={`${styles.Profile_Table2} ${styles.Profile_Table_Common}`}>
-            <tbody>
-              <tr className={styles.Profile_Tr2}>
-                <th colSpan="2">小設定</th>
-              </tr>
-              <tr className={styles.Profile_Tr2}>
-                <th>星座:</th>
-                <td>牧羊座</td>
-              </tr>
-              <tr className={styles.Profile_Tr2}>
-                <th>個性:</th>
-                <td>瓦斯桶(炸一下就沒了)</td>
-              </tr>
-              <tr className={styles.Profile_Tr2}>
-                <th>興趣:</th>
-                <td>吃好吃的，玩好玩的，睡覺，騎車</td>
-              </tr>
-            </tbody>
-          </table>
+        {/* 詳細設定區 */}
+        <div className={styles.detailsCard}>
+          <div className={styles.detailTitle}>小設定</div>
+          <div className={styles.detailRow}>
+            <span className={styles.label}>星座</span>
+            <span className={styles.value}>牡羊座</span>
+          </div>
+          <div className={styles.detailRow}>
+            <span className={styles.label}>個性</span>
+            <span className={styles.value}>瓦斯桶 (炸一下就沒了)</span>
+          </div>
+          <div className={styles.detailRow}>
+            <span className={styles.label}>興趣</span>
+            <span className={styles.value}>吃好吃的、玩好玩的、睡覺、騎車</span>
+          </div>
         </div>
+      </section>
 
-        <div className={styles.right}>right</div>
-      </div>
+      <aside className={styles.right}>
+        <div className={styles.status}>ONLINE</div>
+      </aside>
+
+      <footer className={styles.footer}>
+        © 2026 SAKURA_0405 ALL RIGHTS RESERVED.
+      </footer>
     </main>
-  )
+  );
 }
