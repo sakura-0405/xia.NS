@@ -4,14 +4,15 @@ import Link from "next/link";
 export default function Page() {
   const specs = [
     { label: "處理器", value: "Intel i5-14400" },
-    { label: "顯示卡", value: "NVIDIA RTX 3070ti" },
-    { label: "記憶體", value: "DDR5-6000 16x2" },
+    { label: "顯示卡", value: "MSI RTX 3070 Ti SUPRIM X 8G" },
+    { label: "記憶體", value: "ADATA DDR5-6000 16GBx2 XPG Lancer Blade RGB" },
     { label: "主機板", value: "ASUS B760M-AYW wifi" },
-    { label: "散熱器", value: "利民 PA120" },
+    { label: "散熱器", value: "Thermalright Peerless Assassin 120" },
     { label: "機殼", value: "NZXT H710i" },
-    { label: "硬碟1", value: "WD 240GB 2.5吋" },
-    { label: "硬碟2", value: "UMAX 1TB M.2" },
-    { label: "硬碟3", value: "Micron 2TB M.2" },
+    { label: "硬碟1", value: "WD SSD 250GB 2.5吋" },
+    { label: "硬碟2", value: "UMAX M1500 1TB M.2" },
+    { label: "硬碟3", value: "Micron Crucial P3 2TB Plus M.2" },
+    { label: "電源", value: "MONTECH TITAN GOLD 1000W" },
   ];
 
   return (
