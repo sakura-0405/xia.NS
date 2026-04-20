@@ -53,12 +53,11 @@
 
 /* 懸停效果：加上一點發光或底線 */
 .B:hover {
-  color: #0070f3; /* 亮藍色 */
   background: rgba(255, 255, 255, 0.05); /* 輕微的背景亮起 */
   letter-spacing: 0.3rem; /* 懸浮時字體撐開的動畫感 */
 }
 
 /* 如果你想針對特定按鈕給不同顏色 */
-.B1:hover { border-bottom: 1px solid #0070f3; }
-.B2:hover { border-bottom: 1px solid #0070f3; }
-.B3:hover { border-bottom: 1px solid #0070f3; }
+.B1:hover { border-bottom: 1px solid #ABCDEF; color: #ABCDEF}
+.B2:hover { border-bottom: 1px solid #ffc0cb; color: #ffc0cb}
+.B3:hover { border-bottom: 1px solid #0070f3; color: #0070f3}
