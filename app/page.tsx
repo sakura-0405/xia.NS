@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: '首頁', 
+  robots: 'index, follow',
 };
 
 export default function Page() {

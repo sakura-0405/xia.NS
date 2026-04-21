@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: '關於我', 
+  robots: 'index, follow',
 };
 
 export default function Page() {

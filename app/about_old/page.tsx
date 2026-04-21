@@ -1,5 +1,11 @@
 import styles from '@/styles/about_old.module.css';
 import Link from "next/link";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: '代碼存放', 
+  robots: 'noindex, nofollow',
+};
 
 export default function Page() {
   return (
